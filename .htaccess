@@ -1,0 +1,19 @@
+RewriteEngine On
+
+# /index.html → /
+RewriteCond %{THE_REQUEST} \s/index\.html [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+
+# /html/nastroje.html → /nastroje
+# /html/typydat.html → /typydat
+# /html/metody.html → /metody
+RewriteCond %{THE_REQUEST} \s/html/([^.]+)\.html [NC]
+RewriteRule ^html/([^.]+)\.html$ /%1 [R=301,L]
+
+# /nastroje → /html/nastroje.html interně
+# /typydat → /html/typydat.html interně
+# /metody → /html/metody.html interně
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-zA-Z0-9_-]+)$ html/$1.html [L]
+
