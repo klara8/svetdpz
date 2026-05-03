@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metody sběru dat dálkového průzkumu Země</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="../css/animace.css" rel="stylesheet">
+    <link href="../css/styl.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <nav class="navbar navbar-dark navbar-expand-lg  custom-navbar px-3 sticky-top ">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ">
+                            <a class="nav-link " aria-current="page" href="../index.html#hero">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="../index.html#uvod">Úvod
+                                do DPZ</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="../index.html#vyuziti">Využití dat
+                                DPZ v praxi</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="../index.html#opensource_reseni">Data
+                                a práce s nimi</a>
+                        </li>
+
+                    </ul>
+
+
+
+
+                </div>
+            </div>
+
+            <img src="../logo2.png" alt="logo" class="logo">
+        </nav>
+
+
+
+        <div class="d-flex justify-content-center mt-5 ">
+            <div class="card mb-3 bg-dark rohy" style="width: 70%;">
+                <div class="row g-0 ">
+                    <div class="col-md-6 d-flex align-items-center justify-content-center ps-3">
+                        <svg class="svg_card" xmlns="http://www.w3.org/2000/svg" width="659" height="484"
+                            viewBox="0 0 659 484" fill="none">
+                            <rect width="641" height="484" fill="#F5F5F5" />
+                            <rect x="0" y="396" width="641" height="88" fill="#34C759" />
+                            <g class="slunce">
+                                <path
+                                    d="M268 364L264.778 335.313L241.545 352.447L268 364ZM150 204L147.988 205.484L150.938 209.484L152.95 208L154.962 206.516L152.012 202.516L150 204ZM158.85 216L156.838 217.484L162.738 225.484L164.75 224L166.762 222.516L160.862 214.516L158.85 216ZM170.65 232L168.638 233.484L174.538 241.484L176.55 240L178.562 238.516L172.662 230.516L170.65 232ZM182.45 248L180.438 249.484L186.338 257.484L188.35 256L190.362 254.516L184.462 246.516L182.45 248ZM194.25 264L192.238 265.484L198.138 273.484L200.15 272L202.162 270.516L196.262 262.516L194.25 264ZM206.05 280L204.038 281.484L209.938 289.484L211.95 288L213.962 286.516L208.062 278.516L206.05 280ZM217.85 296L215.838 297.484L221.738 305.484L223.75 304L225.762 302.516L219.862 294.516L217.85 296ZM229.65 312L227.638 313.484L233.538 321.484L235.55 320L237.562 318.516L231.662 310.516L229.65 312ZM241.45 328L239.438 329.484L245.338 337.484L247.35 336L249.362 334.516L243.462 326.516L241.45 328ZM253.25 344L251.238 345.484L257.138 353.484L259.15 352L261.162 350.516L255.262 342.516L253.25 344Z"
+                                    fill="#FFCC00" />
+                                <path
+                                    d="M279 310L275.778 281.313L252.545 298.447L279 310ZM161 150L158.988 151.484L161.938 155.484L163.95 154L165.962 152.516L163.012 148.516L161 150ZM169.85 162L167.838 163.484L173.738 171.484L175.75 170L177.762 168.516L171.862 160.516L169.85 162ZM181.65 178L179.638 179.484L185.538 187.484L187.55 186L189.562 184.516L183.662 176.516L181.65 178ZM193.45 194L191.438 195.484L197.338 203.484L199.35 202L201.362 200.516L195.462 192.516L193.45 194ZM205.25 210L203.238 211.484L209.138 219.484L211.15 218L213.162 216.516L207.262 208.516L205.25 210ZM217.05 226L215.038 227.484L220.938 235.484L222.95 234L224.962 232.516L219.062 224.516L217.05 226ZM228.85 242L226.838 243.484L232.738 251.484L234.75 250L236.762 248.516L230.862 240.516L228.85 242ZM240.65 258L238.638 259.484L244.538 267.484L246.55 266L248.562 264.516L242.662 256.516L240.65 258ZM252.45 274L250.438 275.484L256.338 283.484L258.35 282L260.362 280.516L254.462 272.516L252.45 274ZM264.25 290L262.238 291.484L268.138 299.484L270.15 298L272.162 296.516L266.262 288.516L264.25 290Z"
+                                    fill="#FFCC00" />
+                                <path
+                                    d="M209 337L205.778 308.313L182.545 325.447L209 337ZM91 177L88.988 178.484L91.938 182.484L93.95 181L95.962 179.516L93.012 175.516L91 177ZM99.85 189L97.838 190.484L103.738 198.484L105.75 197L107.762 195.516L101.862 187.516L99.85 189ZM111.65 205L109.638 206.484L115.538 214.484L117.55 213L119.562 211.516L113.662 203.516L111.65 205ZM123.45 221L121.438 222.484L127.338 230.484L129.35 229L131.362 227.516L125.462 219.516L123.45 221ZM135.25 237L133.238 238.484L139.138 246.484L141.15 245L143.162 243.516L137.262 235.516L135.25 237ZM147.05 253L145.038 254.484L150.938 262.484L152.95 261L154.962 259.516L149.062 251.516L147.05 253ZM158.85 269L156.838 270.484L162.738 278.484L164.75 277L166.762 275.516L160.862 267.516L158.85 269ZM170.65 285L168.638 286.484L174.538 294.484L176.55 293L178.562 291.516L172.662 283.516L170.65 285ZM182.45 301L180.438 302.484L186.338 310.484L188.35 309L190.362 307.516L184.462 299.516L182.45 301ZM194.25 317L192.238 318.484L198.138 326.484L200.15 325L202.162 323.516L196.262 315.516L194.25 317Z"
+                                    fill="#FFCC00" />
+
+                            </g>
+                            <g class="od_zeme">
+                                <path
+                                    d="M423 165L409.162 190.334L438.021 189.652L423 165ZM427.702 363.751L430.201 363.692L430.084 358.723L427.584 358.782L425.085 358.841L425.203 363.81L427.702 363.751ZM427.349 348.845L429.849 348.785L429.613 338.848L427.114 338.907L424.615 338.966L424.85 348.904L427.349 348.845ZM426.879 328.969L429.378 328.91L429.143 318.973L426.644 319.032L424.145 319.091L424.38 329.029L426.879 328.969ZM426.409 309.094L428.908 309.035L428.673 299.098L426.174 299.157L423.674 299.216L423.91 309.154L426.409 309.094ZM425.939 289.219L428.438 289.16L428.203 279.223L425.704 279.282L423.204 279.341L423.439 289.278L425.939 289.219ZM425.468 269.344L427.968 269.285L427.733 259.348L425.233 259.407L422.734 259.466L422.969 269.403L425.468 269.344ZM424.998 249.469L427.498 249.41L427.263 239.472L424.763 239.532L422.264 239.591L422.499 249.528L424.998 249.469ZM424.528 229.594L427.027 229.535L426.792 219.597L424.293 219.656L421.794 219.716L422.029 229.653L424.528 229.594ZM424.058 209.719L426.557 209.66L426.322 199.722L423.823 199.781L421.324 199.841L421.559 209.778L424.058 209.719ZM423.588 189.844L426.087 189.785L425.852 179.847L423.353 179.906L420.853 179.965L421.088 189.903L423.588 189.844Z"
+                                    fill="black" />
+                            </g>
+                            <circle cx="75" cy="75" r="75" fill="#FFCC00" />
+                            <rect x="334" y="72" width="177" height="10" fill="black" />
+                            <rect x="392" y="82" width="61" height="24" fill="black" />
+                            <ellipse cx="353.5" cy="55.5" rx="38.5" ry="7.5" fill="black" />
+                            <ellipse cx="491.5" cy="55.5" rx="38.5" ry="7.5" fill="black" />
+                            <rect x="351" y="49" width="9" height="28" rx="4.5" fill="black" />
+                            <rect x="488" y="49" width="9" height="28" rx="4.5" fill="black" />
+                            <path d="M362.781 133C365.619 95.7282 372.215 88.6289 391.626 94.1701" stroke="black"
+                                stroke-width="8" />
+                            <path d="M476.267 132.761C473.429 95.489 466.833 88.3897 447.422 93.9309" stroke="black"
+                                stroke-width="8" />
+                        </svg>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-body">
+                            <h5 class="card-title fs-3 co-nadpis">Pasivní snímání</h5>
+                            <p class="card-text">Pasivní metody využívají přirozené zdroje záření, které Země nebo
+                                Slunce
+                                vyzařují.
+                                Senzory pouze zachycují toto záření, aniž by samy něco vysílaly. </p>
+                            <p class="card-text">Podle zdroje rozlišujeme:
+                                Přímé pasivní metody, které využívají sluneční světlo – typickým příkladem jsou
+                                fotografické
+                                nebo multispektrální snímky.
+                                Nepřímé pasivní metody, které sledují záření vycházející ze Země samotné – například
+                                termografické (měření tepelného infračerveného záření) nebo radiometrické metody.
+                                Pasivní metody jsou ideální pro sledování vegetace, kvality vody, teploty povrchu nebo
+                                dlouhodobé environmentální změny.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center mt-3 ">
+            <div class="card mb-3 bg-dark rohy" style=" width: 70%;">
+                <div class="row g-0">
+                    <div class="col-md-6 d-flex align-items-center justify-content-center ps-3">
+                        <svg class="svg_card" xmlns="http://www.w3.org/2000/svg" width="659" height="484"
+                            viewBox="0 0 659 484" fill="none">
+                            <rect width="641" height="484" fill="#F5F5F5" />
+                            <rect x="0" y="396" width="641" height="88" fill="#34C759" />
+                            <g class="nahoru">
+                                <path
+                                    d="M423 165L409.162 190.334L438.021 189.652L423 165ZM427.702 363.751L430.201 363.692L430.084 358.723L427.584 358.782L425.085 358.841L425.203 363.81L427.702 363.751ZM427.349 348.845L429.849 348.785L429.613 338.848L427.114 338.907L424.615 338.966L424.85 348.904L427.349 348.845ZM426.879 328.969L429.378 328.91L429.143 318.973L426.644 319.032L424.145 319.091L424.38 329.029L426.879 328.969ZM426.409 309.094L428.908 309.035L428.673 299.098L426.174 299.157L423.674 299.216L423.91 309.154L426.409 309.094ZM425.939 289.219L428.438 289.16L428.203 279.223L425.704 279.282L423.204 279.341L423.439 289.278L425.939 289.219ZM425.468 269.344L427.968 269.285L427.733 259.348L425.233 259.407L422.734 259.466L422.969 269.403L425.468 269.344ZM424.998 249.469L427.498 249.41L427.263 239.472L424.763 239.532L422.264 239.591L422.499 249.528L424.998 249.469ZM424.528 229.594L427.027 229.535L426.792 219.597L424.293 219.656L421.794 219.716L422.029 229.653L424.528 229.594ZM424.058 209.719L426.557 209.66L426.322 199.722L423.823 199.781L421.324 199.841L421.559 209.778L424.058 209.719ZM423.588 189.844L426.087 189.785L425.852 179.847L423.353 179.906L420.853 179.965L421.088 189.903L423.588 189.844Z"
+                                    fill="black" />
+                            </g>
+                            <g class="dolu">
+                                <path
+                                    d="M385.649 336.805L400.001 311.758L371.134 311.853L385.649 336.805ZM385 138L382.5 138.008L382.516 142.978L385.016 142.97L387.516 142.962L387.5 137.992L385 138ZM385.049 152.91L382.549 152.919L382.581 162.859L385.081 162.851L387.581 162.843L387.549 152.902L385.049 152.91ZM385.114 172.791L382.614 172.799L382.646 182.739L385.146 182.731L387.646 182.723L387.614 172.783L385.114 172.791ZM385.179 192.671L382.679 192.68L382.711 202.62L385.211 202.612L387.711 202.604L387.679 192.663L385.179 192.671ZM385.244 212.552L382.744 212.56L382.776 222.5L385.276 222.492L387.776 222.484L387.744 212.544L385.244 212.552ZM385.309 232.433L382.809 232.441L382.841 242.381L385.341 242.373L387.841 242.365L387.808 232.424L385.309 232.433ZM385.373 252.313L382.873 252.321L382.906 262.262L385.406 262.253L387.906 262.245L387.873 252.305L385.373 252.313ZM385.438 272.194L382.938 272.202L382.971 282.142L385.471 282.134L387.971 282.126L387.938 272.185L385.438 272.194ZM385.503 292.074L383.003 292.082L383.036 302.023L385.536 302.014L388.036 302.006L388.003 292.066L385.503 292.074ZM385.568 311.955L383.068 311.963L383.101 321.903L385.601 321.895L388.101 321.887L388.068 311.947L385.568 311.955Z"
+                                    fill="black" />
+                            </g>
+                            <circle cx="75" cy="75" r="75" fill="#FFCC00" />
+                            <rect x="313" y="54" width="177" height="10" fill="black" />
+                            <rect x="371" y="64" width="61" height="24" fill="black" />
+                            <ellipse cx="332.5" cy="37.5" rx="38.5" ry="7.5" fill="black" />
+                            <ellipse cx="470.5" cy="37.5" rx="38.5" ry="7.5" fill="black" />
+                            <rect x="330" y="31" width="9" height="28" rx="4.5" fill="black" />
+                            <rect x="467" y="31" width="9" height="28" rx="4.5" fill="black" />
+                            <path d="M341.781 115C344.619 77.7282 351.215 70.6289 370.626 76.1701" stroke="black"
+                                stroke-width="8" />
+                            <path d="M455.267 114.761C452.429 77.489 445.833 70.3897 426.422 75.9309" stroke="black"
+                                stroke-width="8" />
+                        </svg>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-body">
+                            <h5 class="card-title fs-3  co-nadpis">Aktivní snímání</h5>
+                            <p class="card-text ">Aktivní metody fungují na principu vysílání vlastního záření směrem k
+                                zemskému
+                                povrchu.
+                                Přístroj tedy nejen snímá, ale i aktivně „osvětluje“ sledované území – například pomocí
+                                radarových vln nebo laserových paprsků.</p>
+                            <p class="card-text">Následně se měří, jak se vyslané záření odrazí od různých objektů, což
+                                umožňuje přesně
+                                zmapovat
+                                terén, vegetaci, stavby i mořské dno.</p>
+                            <p class="card-text">Velkou výhodou aktivních metod je nezávislost na slunečním záření a
+                                počasí – dokážou získat
+                                data
+                                i v noci nebo při zatažené obloze. Proto se používají například při monitoringu krajiny,
+                                modelování reliéfu nebo sledování povodní.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    </div>
+    <footer>
+        <p>
+            <em>Zdroje:</em> Tato stránka je součástí bakalářské práce<br />
+            Kopecká, K. (2026). <em>Vývoj webové stránky o družicových datech</em> (Bakalářská práce).
+            Vysoká škola
+            ekonomická v Praze.<br />
+            Veškeré použité zdroje jsou uvedeny v této práci.<br /><br />
+            Poslední aktualizace: 6. 4. 2026
+        </p>
+    </footer>
+</body>
+
+</html>

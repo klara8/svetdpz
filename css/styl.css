@@ -1,0 +1,289 @@
+body {
+    background-image: url("../bg_image.png");
+    color: hsl(0, 0%, 100%);
+    height: 100%;
+
+
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+}
+
+/*-----------grid a nadpis*/
+.hero-grid-wrap {
+    position: relative;
+    overflow: hidden;
+    padding: 80px 0;
+}
+
+.hero-grid-wrap .nadpis {
+    position: relative;
+    z-index: 2;
+}
+
+
+.hero-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse 80% 80% at 50% 30%, black 30%, transparent 80%);
+    -webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 30%, black 30%, transparent 80%);
+    pointer-events: none;
+}
+
+.nadpis {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(2.8rem, 7vw, 6rem) !important;
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    position: relative;
+    margin-bottom: 1.5rem;
+
+}
+
+/*-----------grid */
+
+@media (min-width: 768px) {
+    .nadpis {
+        line-height: 1.6;
+        /* tablet */
+    }
+}
+
+@media (min-width: 1200px) {
+    .nadpis {
+        line-height: 1.9;
+        /* desktop – větší mezery */
+    }
+}
+
+em {
+    font-style: normal;
+    color: #018c9f
+}
+
+/* -------------*/
+
+.text-pod-nadpisem {
+    max-width: clamp(320px, 75vw, 850px);
+    margin: 0 auto;
+    font-size: clamp(1.1rem, 2vw, 1.6rem);
+    line-height: 1.7;
+}
+
+
+.svetly-blok {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+
+
+.icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.co-nadpis {
+    font-family: 'Syne', sans-serif;
+    color: #018c9f;
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    position: relative;
+    margin-bottom: 1.5rem;
+
+}
+
+/*uprava vzhledu karet v obdelniku*/
+.rohy {
+    border-radius: 24px;
+}
+
+
+.card-logo {
+    height: 1.5em;
+    width: auto;
+    object-fit: contain;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .fixed-carousel {
+        height: 25em;
+    }
+
+    /* tablet */
+}
+
+
+@media (min-width: 1200px) {
+    .fixed-carousel {
+        height: 25em;
+    }
+
+    /* desktop – větší mezery */
+}
+
+
+/* ─── FOOTER ─── */
+footer {
+    background: #1a2b3c;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.82rem;
+    color: #ffffff93;
+    line-height: 1.8;
+
+}
+
+footer em {
+    font-style: normal;
+    color: #ffffff;
+}
+
+
+footer {
+    margin-top: auto;
+}
+
+
+
+.btn-primary {
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.btn-ghost {
+
+    backdrop-filter: blur(6px);
+    background: rgba(1, 141, 159, 0.365);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 10px 14px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s ease;
+}
+
+.btn-ghost:hover {
+    background: rgba(1, 140, 159, 0.15);
+    border-color: #018c9f;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* IKONA */
+.btn-ghost .ikona {
+    font-size: 1.5rem;
+    /* 👈 větší ikona */
+}
+
+.custom-btn {
+    width: clamp(180px, 70%, 240px);
+    min-height: clamp(60px, 8vw, 80px);
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.custom-btn .icon {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+
+/**/
+
+.content-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+.custom-navbar {
+    background-color: #1a2b3c;
+    /* tvoje barva */
+}
+
+.custom-navbar .nav-link {
+    color: white;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #018c9f;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #00acc1;
+    /* tvoje barva */
+    color: white;
+}
+
+.btn-primary {
+    background-color: #00acc1;
+    border-color: #00acc1;
+}
+
+.btn-primary:hover {
+    background-color: #008b9a;
+    border-color: #008b9a;
+}
+
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+.svg_card {
+    width: 100%;
+    height: auto;
+
+
+}
+
+.slide-content {
+    max-width: 75%;
+    max-height: 50%;
+    margin: auto;
+    padding: 30px 20px 30px 20px;
+}
+
+.slide-content img {
+    border-radius: 15px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
