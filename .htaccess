@@ -1,19 +1,22 @@
 RewriteEngine On
 
-# /index.html → /
-RewriteCond %{THE_REQUEST} \s/index\.html [NC]
+#  /index.html → /
+# Funguje i pro /index.html#hero → /#hero
+RewriteCond %{THE_REQUEST} \s/index\.html[?\s#] [NC]
 RewriteRule ^index\.html$ / [R=301,L]
 
-# /html/nastroje.html → /nastroje
-# /html/typydat.html → /typydat
-# /html/metody.html → /metody
-RewriteCond %{THE_REQUEST} \s/html/([^.]+)\.html [NC]
+#  /html/data.html → /data
+#    /html/nastroje.html → /nastroje
+#    /html/typydat.html → /typydat
+#    /html/metody.html → /metody
+RewriteCond %{THE_REQUEST} \s/html/([^.]+)\.html[?\s] [NC]
 RewriteRule ^html/([^.]+)\.html$ /%1 [R=301,L]
 
-# /nastroje → /html/nastroje.html interně
-# /typydat → /html/typydat.html interně
-# /metody → /html/metody.html interně
+#  /data → /html/data.html
+#    /nastroje → /html/nastroje.html
+#    /typydat → /html/typydat.html
+#    /metody → /html/metody.html
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/html/$1.html -f
 RewriteRule ^([a-zA-Z0-9_-]+)$ html/$1.html [L]
-
